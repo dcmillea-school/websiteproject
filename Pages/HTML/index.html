@@ -1,38 +1,61 @@
-~~<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DataBrawl</title>
-     <link rel="stylesheet" href="css/styles.css">
-</head>
-    
-<body>
-    <header>
-         <h1>Video Game DB</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Complete Collection</li>
-                <li>About</li>
-            </ul>
-        </nav>
+    <title>DataBrawl - Home</title>
+    <link rel="stylesheet" href="../../css/homeStyle.css" />
+  </head>
+
+  <body>
+    <header class="flex-common">
+      <div class="flex-display">
+        <h1 class="neon-pink-bg">Welcome to DataBrawl</h1>
+        <p style="padding-top: 12px" class="neon-blue-bg">
+          A totally unbiased, super accurate gamer database
+        </p>
+        <p style="padding-top: 18px; font-size: 16px !important" class="neon-pink-bg">
+          Real talk. Real games. Real chaos.
+        </p>
+      </div>
     </header>
 
-<!-- Featured Game Section -->
-  <section id="featured">
-    <h2>Featured Game of the Week</h2>
-    <div>
-      <p>[ Image Placeholder ]</p>
-      <p>Title | Release Date | Platform | Genre</p>
-      <button>Read More</button>
-    </div>
-  </section>
-   
-    <footer>
-        
-    </footer>
+    <main class="flex-common" style="flex-direction: column; padding: 40px;">
+      <p class="neon-blue-bg">Explore every game worth knowing (and some that aren't).</p>
+      <p class="neon-pink-bg">Enter the vault... if you dare.</p>
+      <a href="completeData.html" style="margin-top: 20px; font-size: 18px;" class="neon-blue-bg">→ View Complete Game List</a>
+	  
+	  <!-- Featured Games Section -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
+        <!-- Game Image 1 -->
+        <div style="max-width: 300px;">
+          <img src="Images/game1.jpg" alt="Call of Duty" style="width: 100%; border-radius: 10px; box-shadow: 0 0 15px #2bc7ff;" />
+          <p class="neon-blue-bg" style="margin-top: 10px;">Call of Duty</p>
+        </div>
 
-</body>
+        <!-- Game Image 2 -->
+        <div style="max-width: 300px;">
+          <img src="Images/game4.jpg" alt="Mortal Kombat X" style="width: 100%; border-radius: 10px; box-shadow: 0 0 15px #ff4f81;" />
+          <p class="neon-pink-bg" style="margin-top: 10px;">Mortal Kombat X</p>
+        </div>
+
+        <!-- Game Image 3 -->
+        <div style="max-width: 300px;">
+          <img src="Images/game3.jpg" alt="The Last of Us 2" style="width: 100%; border-radius: 10px; box-shadow: 0 0 15px #39ff14;" />
+          <p class="neon-blue-bg" style="margin-top: 10px;">The Last of Us 2</p>
+        </div>
+      </div>
+
+      <!-- Link to Game List -->
+      <a href="gameList.html" style="margin-top: 40px; font-size: 18px;" class="neon-blue-bg">→ View Complete Game List</a>
+     
+	  
+	  
+	  
+    </main>
+
+    <footer class="flex-common">
+      <p class="neon-pink-bg">Made By Zhe David </p>
+    </footer>
+  </body>
 </html>
