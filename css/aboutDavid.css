@@ -1,0 +1,128 @@
+/* ===== Reset and Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 4rem 1rem;
+}
+
+/* ===== Container ===== */
+.container {
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  background-color: #121212;
+  box-shadow: 0 0 25px #00ffff55;
+  max-width: 900px;
+  width: 100%;
+  padding: 4rem 3rem;
+}
+
+/* ===== Headings ===== */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  margin-bottom: 0.5rem;
+}
+
+p.subheading {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #bbbbbb;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Sections ===== */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* ===== Text Content ===== */
+.about-extra {
+  color: #ffffff;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+/* ===== Lists ===== */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  color: #ff4dff;
+  margin: 0.5rem 0;
+  text-shadow: 0 0 5px #ff4dff;
+}
+
+/* ===== Image Gallery ===== */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+.back-home {
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.back-home a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.back-home a:hover {
+  color: #39ff14;
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
