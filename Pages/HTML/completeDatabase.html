@@ -23,27 +23,23 @@
         </p>
 
         <nav class="nav">
-          <a href="index.html">
-             Home
-          </a>
-          <a href="completeDatabase.html">
-            Complete Game List
-          </a>
-          <a href="About.html">
-            About
-          </a>
+          <a href="index.html"> Home </a>
+          <a href="completeDatabase.html"> Complete Game List </a>
+          <a href="About.html"> About </a>
         </nav>
       </div>
     </header>
 
     <main id="game-list" class="game-grid">
       <!-- Game items will be dynamically injected here by JavaScript -->
+      <div class="spinner" id="loading-spinner"></div>
     </main>
 
     <footer class="flex-common">
       <p class="neon-pink-bg">Made with love by Danny</p>
     </footer>
 
-    <script src="../../scripts/API_call.js"></script>
+    <script type="module" src="../../scripts/mock_Data.js"></script>
+    <script type="module" src="../../scripts/complete_data.js"></script>
   </body>
 </html>
