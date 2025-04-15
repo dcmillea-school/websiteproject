@@ -11,16 +11,27 @@ body {
     font-family: 'Arial', sans-serif;
     padding: 20px;
 }
-  
-  /* Header + Footer neon flex */
+
+/* Header + Footer neon flex */
+/* ==========MAIN HEADER (DO NOT CHANGE) ============== */
 .flex-common {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #11303d;
-    padding: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #11303d;
+  padding: 20px;
+  margin-bottom: 20px;
 }
+
+.flex-display {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+/* ======================== */
   
 .neon-pink-bg {
     color: white;

@@ -54,6 +54,27 @@ p.subheading {
     text-shadow: 0 0 5px #00ffff;
 }
 
+/* Header + Footer neon flex */
+/* ==========MAIN HEADER (DO NOT CHANGE) ============== */
+.flex-common {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #11303d;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .flex-display {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ======================== */
+
 ul {
     list-style: none;
     padding-left: 0;
