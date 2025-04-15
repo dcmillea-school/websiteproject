@@ -1,0 +1,123 @@
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header + Footer neon flex */
+  .flex-common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11303d;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .neon-pink-bg {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px #ff4f81, 0 0 20px #ff4f81, 0 0 30px #ff4f81;
+  }
+  
+  .neon-blue-bg {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px #2bc7ff, 0 0 20px #2bc7ff, 0 0 30px #2bc7ff;
+  }
+
+  .neon-green-bg {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
+  }
+  
+  /* Home page specific main section */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* Scuffed Up Nav Bar */
+  .nav{
+    position: sticky;
+    top: 0;
+  }
+  
+  nav{
+    margin-top:20px;
+    padding: 2%;
+    display: inline-block;
+    background-color: #000;
+    overflow: hidden;
+    text-align: center;
+    border: solid 1px #11303d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #39ff14;
+  }
+  
+  nav img{
+    float: left;
+  }
+  
+  /* Link styled like a button */
+  a {
+    display: inline-block;
+    margin: 15px auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #2bc7ff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #2bc7ff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .pink-btn{
+    background-color: #ff4f81;
+    box-shadow: 0 0 15px #ff4f81;
+  }
+
+  .pink-btn:hover{
+    background-color: #c93d65;
+    transform: scale(1.05);
+  }
+
+  .green-btn{
+    background-color: #39ff14;
+    box-shadow: 0 0 15px #39ff14;
+  }
+
+  .green-btn:hover{
+    background-color: #2aaf13;
+    transform: scale(1.05);
+  }
+  
+  a:hover {
+    background-color: #18b2e6;
+    transform: scale(1.05);
+  }
+
+  .footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+  

@@ -45,11 +45,33 @@ main {
   padding: 40px 20px;
 }
 
+/* Scuffed Up Nav Bar */
+.nav{
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  margin-top:20px;
+  padding: 2%;
+  display: inline-block;
+  background-color: #000;
+  overflow: hidden;
+  text-align: center;
+  border: solid 1px #11303d;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #39ff14;
+}
+
+nav img{
+  float: left;
+}
+
 /* Link styled like a button */
 a {
   display: inline-block;
-  margin-top: 30px;
-  font-size: 18px;
+  margin: 15px auto;
+  font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
   color: white;
