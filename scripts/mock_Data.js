@@ -203,5 +203,12 @@ export const mockData = {
       background_image: "../../media/game_covers/reddead2.jpg",
       isFeatured: true,
     },
+    {
+      name: "Indiana Jones and the Great Circle",
+      released: "2024-12-09",
+      rating: 7.5,
+      background_image: "../../media/game_covers/indiana.jpg",
+      isFeatured: true,
+    },
   ],
 };

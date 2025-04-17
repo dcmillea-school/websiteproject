@@ -136,10 +136,32 @@ a:hover {
 .game-section {
   display: flex;
   width: 100%;
-  max-width: 1280px;
-  border: 2px solid red;
+  max-width: 1280px;            
   overflow: hidden;
   justify-content: center;
+  flex-direction: column;
+}
+
+.game-section {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  padding: 10px;
+  background-color: #333; /* temp background for visibility */
+}
+
+.section-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .image-wrapper {
@@ -162,6 +184,12 @@ a:hover {
     border-radius: 6px;
     margin-bottom: 12px;
 }  
+
+#video-container {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 24px;
+}
   
   /* Game Title */
 .game-title {
