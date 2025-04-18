@@ -214,10 +214,18 @@ a:hover {
     .game-card {
       width: 45%;
     }
+
+    iframe {
+      width: 550px;
+    }
 }
   
 @media (max-width: 600px) {
     .game-card {
       width: 90%;
+    }
+
+    iframe {
+      width: 500px;
     }
 }

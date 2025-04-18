@@ -27,9 +27,13 @@ function displayGames(games) {
   gameList.innerHTML = ""; // Clear previous content
 
   if (games.results && Array.isArray(games.results)) {
-    const featuredGames = games.results.filter((game) => game.featured);
+    const featuredGames = games.results.filter((game) => game.isFeatured);
+    const classicGames = games.results.filter((game) => game.isClassic);
     const highestRatedGames = [...games.results]
       .sort((a, b) => b.rating - a.rating)
+      .slice(0, 4);
+    const lowestRatedGames = [...games.results]
+      .sort((a, b) => a.rating - b.rating)
       .slice(0, 4);
     const newestReleases = [...games.results]
       .sort((a, b) => new Date(b.released) - new Date(a.released))
@@ -43,8 +47,16 @@ function displayGames(games) {
       createGameSection("🔥 Highest Rated", highestRatedGames);
     }
 
+    if (lowestRatedGames.length > 0) {
+      createGameSection("🧊 Lowest Rated", lowestRatedGames);
+    }
+
     if (newestReleases.length > 0) {
       createGameSection("🆕 Newest Releases", newestReleases);
+    }
+
+    if (classicGames.length > 0) {
+      createGameSection("🎮 Absolute Classics", classicGames);
     }
   } else {
     gameList.innerHTML = "<p>No games to display.</p>";
