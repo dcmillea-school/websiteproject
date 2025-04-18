@@ -93,20 +93,25 @@
     float: left;
   }
   
-  /* Link styled like a button */
-  a {
-    display: inline-block;
-    margin: 15px auto;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background-color: #2bc7ff;
-    padding: 12px 24px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px #2bc7ff;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+/* Link styled like a button */
+.nav a {
+  display: inline-block;
+  margin: 15px auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #2bc7ff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #2bc7ff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: #18b2e6;
+  transform: scale(1.05);
+}
 
   .pink-btn{
     background-color: #ff4f81;
@@ -127,11 +132,6 @@
     background-color: #2aaf13;
     transform: scale(1.05);
   }
-  
-  a:hover {
-    background-color: #18b2e6;
-    transform: scale(1.05);
-  }
 
   .footer {
     text-align: center;
@@ -140,3 +140,96 @@
     margin-top: 4rem;
 }
   
+
+.image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px; /* Or whatever height works best for your layout */
+    object-fit: cover; /* 🔥 This maintains aspect ratio + crops edges */
+    border-radius: 6px;
+    margin-bottom: 12px;
+}  
+
+.game-card {
+  background-color: #1a1a1a;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #39ff14aa;
+  padding: 24px;
+  margin: 0px 24px;
+  width: 22%; /* 👈 this is what allows 4 per row */
+  min-width: 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+
+.game-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.3); /* Increase the scale for a stronger zoom effect */
+  filter: brightness(1.2); /* Brighten the card */
+  box-shadow: 0 4px 12px rgba(0, 255, 140, 0.711); /* Add a subtle shadow for depth */
+  background-color: #1a1a1a;
+  border: 2px solid #0bd2ff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0bd2ff;
+}
+
+.game-card:hover .game-title {
+  color: #0bd2ff;
+  text-shadow: 0 0 8px #0bd2ff;
+}
+
+.game-card:hover img {
+  border: 2px solid #0bd2ff;
+  border-radius: 10px;
+}  
+
+.game-card img {
+  width: 100%;
+  height: 200px; /* Or whatever height works best for your layout */
+  object-fit: cover; /* 🔥 This maintains aspect ratio + crops edges */
+  border-radius: 6px;
+  margin-bottom: 12px;
+}  
+
+ /* Game Title */
+ .game-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff4f81;
+  text-shadow: 0 0 8px #ff4f81;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-card a {
+  text-decoration: none;
+  color: inherit;
+}
