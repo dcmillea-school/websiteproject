@@ -13,6 +13,13 @@ body {
   text-align: center;
 }
 
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
 /* Header + Footer neon flex */
 .flex-common {
   display: flex;

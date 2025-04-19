@@ -12,6 +12,13 @@ body {
     padding: 20px;
 }
 
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
 /* Header + Footer neon flex */
 /* ==========MAIN HEADER (DO NOT CHANGE) ============== */
 .flex-common {
