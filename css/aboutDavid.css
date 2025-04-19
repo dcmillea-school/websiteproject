@@ -19,27 +19,6 @@ body {
   padding: 4rem 1rem;
 }
 
-/* Header + Footer neon flex */
-/* ==========MAIN HEADER (DO NOT CHANGE) ============== */
-.flex-common {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: #11303d;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.flex-display {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  justify-content: center;
-  align-items: center;
-}
-/* ======================== */
-
 /* ===== Container ===== */
 .container {
   border: 2px solid #00ffff;
@@ -101,6 +80,37 @@ li {
   text-shadow: 0 0 5px #ff4dff;
 }
 
+/* ===== Profile Image and Text Styling ===== */
+.who-i-am {
+  display: flex;  /* Using Flexbox to align elements */
+  flex-direction: column; /* Stack image and text vertically */
+  justify-content: center;  /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  margin-bottom: 30px;  /* Adds space below the section */
+  text-align: center; /* Ensures the text is centered below the image */
+}
+
+.profile-image {
+  width: 200px; /* Increased width for a larger square image */
+  height: 200px; /* Increased height for a larger square image */
+  border-radius: 10px; /* Optional: Slightly rounded corners, you can remove this if you prefer sharp corners */
+  margin-bottom: 20px; /* Adds space between the image and the text */
+  border: 2px solid #9b4dff; /* Neon purple border */
+}
+
+.about-text {
+  flex: 1; /* Makes the text section take up the remaining space */
+  max-width: 600px;  /* Limits the width of the text section for readability */
+}
+
+/* About text styling */
+.about-extra {
+  font-size: 1.1rem; /* Slightly larger font for text */
+  color: #e0e0e0; /* Light gray color for text */
+  line-height: 1.6; /* Adds space between lines of text */
+}
+
+
 /* ===== Image Gallery ===== */
 .image-gallery {
   display: flex;
@@ -122,23 +132,6 @@ li {
 .image-gallery img:hover {
   transform: scale(1.05);
 }
-.back-home {
-  text-align: center;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-}
-
-.back-home a {
-  color: #00ffff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.back-home a:hover {
-  color: #39ff14;
-  text-decoration: underline;
-}
 
 /* ===== Footer ===== */
 .footer {
@@ -146,4 +139,23 @@ li {
   color: #888;
   font-size: 0.9rem;
   margin-top: 4rem;
+}
+
+/* Back to Homepage Link Styling */
+.back-home {
+  text-align: center; /* Centers the link */
+  margin-top: -1rem; /* Slightly adjusts the margin */
+  margin-bottom: 2rem; /* Adds space below the link */
+}
+
+.back-home a {
+  color: #00ffff; /* Cyan color for the link */
+  text-decoration: none; /* Removes the underline from the link */
+  font-size: 1rem; /* Standard font size */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.back-home a:hover {
+  color: #39ff14; /* Neon green color on hover */
+  text-decoration: underline; /* Adds underline on hover */
 }
