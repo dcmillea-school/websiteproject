@@ -1,0 +1,151 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Header + Footer neon flex */
+.flex-common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #11303d;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.neon-pink-bg {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #ff4f81, 0 0 20px #ff4f81, 0 0 30px #ff4f81;
+}
+
+.neon-blue-bg {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #2bc7ff, 0 0 20px #2bc7ff, 0 0 30px #2bc7ff;
+}
+
+/* Game creation form container */
+#game-form-container {
+  border: 2px solid #39ff14;
+  border-radius: 15px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 25px #39ff14aa;
+  max-width: 900px;
+  width: 100%;
+  padding: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form heading */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field and button styles */
+.form-group label {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  background-color: #222;
+  color: #ffffff;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #00ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff4f81;
+}
+
+/* Result message */
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff4dff;
+  font-size: 1.3rem;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #39ff14;
+  text-decoration: underline;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 900px) {
+  #game-form-container {
+    padding: 2rem;
+  }
+
+  .form-group label {
+    font-size: 1.1rem;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 1rem;
+  }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  #game-form-container {
+    padding: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 1rem;
+  }
+}
