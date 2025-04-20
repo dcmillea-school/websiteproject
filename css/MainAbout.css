@@ -7,6 +7,12 @@
     font-size: 1.8rem;
     text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
   }
+
+  .mission{
+    font-size: 2em;
+    margin-left: 10% ;
+    margin-right: 10%;
+  }
   
   /* Home page specific main section */
   main {

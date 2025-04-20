@@ -185,6 +185,16 @@ footer p {
   font-size: 0.85rem;
 }
 
+/* Sticky Logo Styles ========================================================Logo here*/
+.logo{
+  max-width: 150px;
+  position: sticky;
+  top: 0;
+  float: left;
+  /* background-color: #121212; */
+  border-radius: 30px;
+}
+
 /* mobile footer */
 @media (max-width: 900px) {
   .footer-links {
@@ -269,7 +279,6 @@ footer p {
   }
 }
 
-
 /* Responsive Nav */
 @media (max-width: 768px) {
   nav {
@@ -294,9 +303,15 @@ footer p {
   .hamburger {
     display: flex;
   }
+
+  .logo{
+    max-width: 90px;
+  }
+
+  body{
+    background-color: rgb(18, 13, 37);
+  }
 }
-
-
 
 
 /* slow flicker */
@@ -353,6 +368,4 @@ footer p {
       0 0 300px #11303d;
   }
 }
-
-
 

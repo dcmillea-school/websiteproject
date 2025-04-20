@@ -56,7 +56,15 @@
     margin-top: 3rem;
   }
 
-  
+  .section{
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+
+  .about-extra{
+    padding: 2%;
+    font-size: 1.25em;
+  }
 
   .subheading {
     display: flex;
@@ -66,6 +74,8 @@
     font-size: 1.3rem;
     margin-bottom: 1.25rem;
   }
+
+/* Super cool thing where when you click on main image, more appear below it */
 
   .image-wrapper {
     text-align: center;
