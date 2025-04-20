@@ -64,6 +64,11 @@
     text-shadow: none;
     box-shadow: 0 0 8px #39ff14;
   }
+  
+  nav a:first-child {
+    font-weight: bold;
+    color: #ff00f2;
+  }
 
 
 /* Main Colors */
@@ -186,13 +191,13 @@ footer p {
 }
 
 /* Sticky Logo Styles ========================================================Logo here*/
-.logo{
+.logo {
   max-width: 150px;
-  position: sticky;
-  top: 0;
-  float: left;
-  /* background-color: #121212; */
+  position: fixed;
+  bottom: 20px; /* distance from the bottom */
+  right: 20px;  /* distance from the right */
   border-radius: 30px;
+  z-index: 1000; /* optional: ensures it sits above other elements */
 }
 
 /* mobile footer */

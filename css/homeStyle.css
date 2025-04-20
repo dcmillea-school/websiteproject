@@ -18,7 +18,63 @@ main {
   padding: 20px;
 }
 
-/* Medium screens (like tablets) */
+.social-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 50px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  width: 25px;
+}
+
+.social-icon:hover {
+  color: #000000; /* Twitter blue or Facebook blue depending on icon */
+}
+
+.social-icon-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  padding: 10px;
+}
+
+/* Default state (desktop and up) */
+.responsive-message {
+  display: none;
+}
+
+/* Tablet view (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .responsive-message {
+    display: block;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+
+  body {
+    background-color: rgb(21, 26, 54);
+  }
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 767px) {
+  .responsive-message {
+    display: none;
+  }
+}
+
+/* Medium screens my G */
 @media (max-width: 992px) {
   .game-grid {
     grid-template-columns: repeat(3, 1fr);
