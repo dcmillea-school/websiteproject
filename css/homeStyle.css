@@ -47,9 +47,15 @@ main {
   padding: 10px;
 }
 
-/* Default state (desktop and up) */
+/* for unique screen sizing requirements */
 .responsive-message {
   display: none;
+}
+
+@media (min-width: 1025px) {
+  .desktop-only-highlight {
+    color: red !important;
+  }
 }
 
 /* Tablet view (between 768px and 1024px) */
