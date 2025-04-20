@@ -1,4 +1,6 @@
-/* Reset and base */
+/* Additional imports for main styles */
+@import url('styles.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -155,24 +157,6 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-/* Scuffed Up Nav Bar */
-.nav{
-  position: sticky;
-  top: 0;
-}
-
-nav{
-  margin-top:20px;
-  padding: 2%;
-  display: inline-block;
-  background-color: #000;
-  overflow: hidden;
-  text-align: center;
-  border: solid 1px #11303d;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #39ff14;
 }
 
 /* Link styled like a button */

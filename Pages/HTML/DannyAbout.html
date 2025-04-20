@@ -13,11 +13,26 @@
   <body>
     <header class="flex-common">
       <div class="flex-display">
-        <h1 class="neon-pink-bg">Daniel Millea - About</h1>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h1 class="neon-pink-bg">About - Daniel Millea</h1>
+        <p style="padding-top: 12px" class="neon-blue-bg">
+          The resume of Daniel The Great
+        </p>
+        <p
+          style="padding-top: 18px; font-size: 16px !important"
+          class="neon-pink-bg sub-heading"
+        >
+          "Put ya money up or shut ya honey up"
+        </p>
 
         <!-- 🔗 About Page Link -->
-        <nav class="nav">
-          <a href="index.html"> Home </a>
+        <nav class="nav" id="nav-links">
+          <a href="./index.html"> Home </a>
+          <a href="Create.html">Create your Game</a>
           <a href="completeDatabase.html"> Complete Game List </a>
           <a href="About.html"> About </a>
         </nav>
@@ -79,6 +94,17 @@
       </div>
     </section>
 
-    <footer>&copy; 2025 Daniel. All Rights Reserved.</footer>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="../HTML/index.html">Home</a>
+        <a href="../HTML/Create.html">Create Your Game</a>
+        <a href="../HTML/completeDatabase.html">Complete Game List</a>
+        <a href="../HTML/About.html">About</a>
+      </div>
+      <p class="copyright">&copy; 2025 DataBrawl. All rights reserved.</p>
+    </footer>
+    <script type="module" src="../../scripts/mock_Data.js"></script>
+    <script type="module" src="../../scripts/homePageAPI.js"></script>
+    <script type="module" src="../../scripts/hamburger.js"></script>
   </body>
 </html>

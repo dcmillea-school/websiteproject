@@ -15,37 +15,31 @@
   <body>
     <header class="flex-common">
       <div class="flex-display">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <h1 class="neon-pink-bg">Welcome to DataBrawl</h1>
         <p style="padding-top: 12px" class="neon-blue-bg">
           A totally unbiased, super accurate gamer database
         </p>
         <p
           style="padding-top: 18px; font-size: 16px !important"
-          class="neon-pink-bg"
+          class="neon-pink-bg sub-heading"
         >
           Real talk. Real games. Real chaos.
         </p>
 
         <!-- 🔗 About Page Link -->
-        <nav class="nav">
-          <a href="index.html"> Home </a>
+        <nav class="nav" id="nav-links">
+          <a href="./index.html"> Home </a>
+          <a href="Create.html">Create your Game</a>
           <a href="completeDatabase.html"> Complete Game List </a>
           <a href="About.html"> About </a>
         </nav>
       </div>
     </header>
-    <!-- 
-    <main class="flex-common" style="flex-direction: column; padding: 40px">
-      <p class="neon-blue-bg">
-        Explore every game worth knowing (and some that aren't).
-      </p>
-      <p class="neon-pink-bg">Enter the vault... if you dare.</p>
-      <a
-        href="completeDatabase.html"
-        style="margin-top: 20px; font-size: 18px"
-        class="neon-blue-bg"
-        >→ View Complete Game List</a
-      > -->
 
     <main>
       <!-- Container for YouTube video -->
@@ -54,12 +48,17 @@
       <!-- JS will inject game sections here -->
     </main>
 
-    <footer class="flex-common">
-      <p class="neon-pink-bg">Databrawl</p>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="../HTML/index.html">Home</a>
+        <a href="../HTML/Create.html">Create Your Game</a>
+        <a href="../HTML/completeDatabase.html">Complete Game List</a>
+        <a href="../HTML/About.html">About</a>
+      </div>
+      <p class="copyright">&copy; 2025 DataBrawl. All rights reserved.</p>
     </footer>
-    <div class="footer">&copy; 2025 DataBrawl. All rights reserved.</div>
-
     <script type="module" src="../../scripts/mock_Data.js"></script>
     <script type="module" src="../../scripts/homePageAPI.js"></script>
+    <script type="module" src="../../scripts/hamburger.js"></script>
   </body>
 </html>
