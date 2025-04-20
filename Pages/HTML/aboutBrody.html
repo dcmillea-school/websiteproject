@@ -13,11 +13,28 @@
   <body>
     <header class="flex-common">
       <div class="flex-display">
-        <h1 class="neon-pink-bg">"All" About Brody Garcia</h1>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h1 class="neon-pink-bg">About - Brody</h1>
+        <p style="padding-top: 12px" class="neon-blue-bg">
+          The resume of Bodacious Brody
+        </p>
+        <p
+          style="padding-top: 18px; font-size: 16px !important"
+          class="neon-pink-bg sub-heading"
+        >
+          "[insert your own quote here]"
+        </p>
 
         <!-- 🔗 About Page Link -->
-        <nav class="nav">
-          <a href="About.html"> ← Back to the About Page </a>
+        <nav class="nav" id="nav-links">
+          <a href="./index.html"> Home </a>
+          <a href="Create.html">Create your Game</a>
+          <a href="completeDatabase.html"> Complete Game List </a>
+          <a href="About.html"> About </a>
         </nav>
       </div>
     </header>
@@ -25,13 +42,11 @@
     <div class="container">
       <h1 class="neon-blue-bg">Brody Garcia</h1>
       <ul class="subheading skills">
-
         <li class="skill">Collector</li>
         <li class="skill">Patientce</li>
         <li class="skill">Photographer</li>
         <li class="skill">Procrastinator</li>
         <li class="skill">Gamer</li>
-
       </ul>
 
       <div class="section">
@@ -40,34 +55,72 @@
           Hey y’all, my name is Brody Alberto Garcia. I try my best.
         </p>
         <p class="about-extra">
-          But sometimes my best isn’t good enough. And that’s okay. As long as I improve myself, I should be fine in the long run. Any progress is good progress, I always say. I am a huge fan of The Transformers. I love collecting them. I also like taking pictures of my Transformers. Photography is a hobby of mine that I considered for a career for a little bit, but I’ve seen folks regret turning their hobbies into full-time jobs.
+          But sometimes my best isn’t good enough. And that’s okay. As long as I
+          improve myself, I should be fine in the long run. Any progress is good
+          progress, I always say. I am a huge fan of The Transformers. I love
+          collecting them. I also like taking pictures of my Transformers.
+          Photography is a hobby of mine that I considered for a career for a
+          little bit, but I’ve seen folks regret turning their hobbies into
+          full-time jobs.
         </p>
         <p class="about-extra">
-          Now, why did I choose Computer Science as my major? Because I like being around computers. I wouldn’t say it’s my passion, but I enjoy it. Everything follows rules, and most of the time, you know what you did wrong. There isn’t much requirement for creativity, and that’s perfect for me as someone who isn’t too good at that.        </p>
+          Now, why did I choose Computer Science as my major? Because I like
+          being around computers. I wouldn’t say it’s my passion, but I enjoy
+          it. Everything follows rules, and most of the time, you know what you
+          did wrong. There isn’t much requirement for creativity, and that’s
+          perfect for me as someone who isn’t too good at that.
+        </p>
       </div>
     </div>
 
     <main>
-      <h2 style="text-align: center;"> Click Me!</h2>
+      <h2 style="text-align: center">Click Me!</h2>
       <div class="image-wrapper">
-        <img src="/media/about_photos/about_brody.jpg" class="main-image" alt="Main image" />
-      
+        <img
+          src="/media/about_photos/about_brody.jpg"
+          class="main-image"
+          alt="Main image"
+        />
+
         <div class="hidden-images">
-          <img src="/media/brody_About_photos/Soundwave.JPG" alt="Transformers Legacy Soundwave" />
-          <img src="/media/brody_About_photos/Ferak.JPG" alt="Trasnformers Legacy Ferak" />
-          <img src="/media/brody_About_photos/OP.JPG" alt="Transformers Studio Series Optimus Prime"/>
-          <img src="/media/brody_About_photos/Bludgeon.JPG" alt="Transformers Legacy Bludgeon"/>
+          <img
+            src="/media/brody_About_photos/Soundwave.JPG"
+            alt="Transformers Legacy Soundwave"
+          />
+          <img
+            src="/media/brody_About_photos/Ferak.JPG"
+            alt="Trasnformers Legacy Ferak"
+          />
+          <img
+            src="/media/brody_About_photos/OP.JPG"
+            alt="Transformers Studio Series Optimus Prime"
+          />
+          <img
+            src="/media/brody_About_photos/Bludgeon.JPG"
+            alt="Transformers Legacy Bludgeon"
+          />
           <!-- <img src="/media/brody_About_photos/Ghost.JPG" alt="Transformers Studio Series 86 Starscream">
           <img src="/media/brody_About_photos/Shadow.JPG" alt="Transformers Legacy Shadow Striker"> -->
         </div>
-      </div>    
-    </main>  
-      <script>
-        document.querySelector('.main-image').addEventListener('click', function () {
-          this.parentElement.classList.toggle('active');
+      </div>
+    </main>
+    <script>
+      document
+        .querySelector(".main-image")
+        .addEventListener("click", function () {
+          this.parentElement.classList.toggle("active");
         });
-      </script>
-    
-    <footer>&copy; 2025 Brody G. All Rights Reserved.</footer>
+    </script>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="../HTML/index.html">Home</a>
+        <a href="../HTML/Create.html">Create Your Game</a>
+        <a href="../HTML/completeDatabase.html">Complete Game List</a>
+        <a href="../HTML/About.html">About</a>
+      </div>
+      <p class="copyright">&copy; 2025 DataBrawl. All rights reserved.</p>
+    </footer>
+    <script type="module" src="../../scripts/hamburger.js"></script>
   </body>
 </html>

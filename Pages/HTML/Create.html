@@ -1,60 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Create Your Game - Databrawl</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/create.css"> <!-- Custom styles -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Game - Databrawl</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../css/Create.css" />
+    <!-- Custom styles -->
+  </head>
+  <body>
+    <header class="flex-common">
+      <div class="flex-display">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h1 class="neon-pink-bg">Create Your Own Game!</h1>
+        <p style="padding-top: 12px" class="neon-blue-bg">
+          Tell Us About Your Game Idea
+        </p>
+        <p
+          style="padding-top: 18px; font-size: 16px !important"
+          class="neon-pink-bg sub-heading"
+        >
+          O ya! This is so cool! 🪿🧨
+        </p>
 
-  <header class="text-center mt-4">
-    <h1 class="display-4">Create Your Own Game</h1>
-    <p class="lead">Tell us about your game idea!</p>
-  </header>
-
-  <div class="container mt-5" id="game-form-container">
-    <form id="game-form" onsubmit="return showJoke()">
-      <div class="form-group">
-        <label for="title">Game Title:</label>
-        <input type="text" class="form-control" id="title" name="title" required>
+        <!-- 🔗 About Page Link -->
+        <nav class="nav" id="nav-links">
+          <a href="./index.html"> Home </a>
+          <a href="Create.html">Create your Game</a>
+          <a href="completeDatabase.html"> Complete Game List </a>
+          <a href="About.html"> About </a>
+        </nav>
       </div>
+    </header>
+    <main>
+      <div class="container mt-5" id="game-form-container">
+        <form id="game-form">
+          <div class="form-group">
+            <label for="title">Game Title:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              name="title"
+              required
+            />
+          </div>
 
-      <div class="form-group">
-        <label for="genre">Game Genre:</label>
-        <input type="text" class="form-control" id="genre" name="genre" required>
+          <div class="form-group">
+            <label for="genre">Game Genre:</label>
+            <select class="form-control" id="genre" name="genre" required>
+              <option value="horror">Horror</option>
+              <option value="adventure">Adventure</option>
+              <option value="rpg">RPG</option>
+              <option value="strategy">Strategy</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="platform">Platform:</label>
+            <select class="form-control" id="platform" name="platform" required>
+              <option value="xbox">Xbox</option>
+              <option value="playstation">PlayStation</option>
+              <option value="pc">PC</option>
+              <option value="switch">Switch</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Create Game
+          </button>
+        </form>
+
+        <p id="result" class="mt-3" style="font-weight: bold"></p>
+
+        <!-- Game cover container -->
+        <div id="game-cover" class="mt-5 text-center">
+          <img
+            src=""
+            alt="Game Cover"
+            id="cover-image"
+            style="width: 100%; max-width: 400px; margin-bottom: 10px"
+          />
+          <h3 id="game-title"></h3>
+        </div>
+
+        <!-- Table displaying the metrics -->
+        <table
+          class="table table-bordered table-striped mt-5"
+          id="game-metrics-table"
+        >
+          <thead class="thead-dark">
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Development Cost</td>
+              <td id="development-cost">$0</td>
+            </tr>
+            <tr>
+              <td>Revenue Potential</td>
+              <td id="revenue-potential">$0</td>
+            </tr>
+            <tr>
+              <td>Platform Fee</td>
+              <td id="platform-fee">$0</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <div class="form-group">
-        <label for="platform">Platform:</label>
-        <input type="text" class="form-control" id="platform" name="platform" required>
+    </main>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="../HTML/index.html">Home</a>
+        <a href="../HTML/Create.html">Create Your Game</a>
+        <a href="../HTML/completeDatabase.html">Complete Game List</a>
+        <a href="../HTML/About.html">About</a>
       </div>
+      <p class="copyright">&copy; 2025 DataBrawl. All rights reserved.</p>
+    </footer>
 
-      <button type="submit" class="btn btn-primary btn-block">Create Game</button>
-    </form>
+    <script>
+      function showJoke() {
+        const result = document.getElementById("result");
+        result.textContent =
+          "😂 You can't make games, only buy 'em ahah! This is Databrawl!";
+        return false; // Prevent form submission
+      }
+    </script>
 
-    <p id="result" class="mt-3" style="font-weight: bold;"></p>
-  </div>
-
-  <footer class="text-center mt-5">
-    <p>Created by <strong>David Lambalamba</strong></p>
-
-	<p class="Portfolio"><a href="aboutDavid.html">Visit my Portfolio</a></p>
-  </footer>
-
-  <script>
-    function showJoke() {
-      const result = document.getElementById("result");
-      result.textContent = "😂 You can't make games, only buy 'em ahah! This is Databrawl!";
-      return false; // Prevent form submission
-    }
-  </script>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</body>
+    <!-- Bootstrap JS and dependencies -->
+    <script type="module" src="../../scripts/hamburger.js"></script>
+    <script src="../../scripts/game_form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>

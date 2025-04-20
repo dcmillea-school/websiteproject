@@ -1,21 +1,358 @@
+/* THIS FILE IS FOR THE MAIN STYLES, DO NOT CHANGE THESE!!!!!!!! */
 
-/* Header + Footer neon flex */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+
 /* ==========MAIN HEADER (DO NOT CHANGE) ============== */
 .flex-common {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #11303d;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1a26; /* Slightly deeper blue-black for a more intense feel */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif; /* Optional: a more techy/gaming font */
+  transition: box-shadow 0.3s ease;
+}
   
   .flex-display {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
   /* ======================== */
+  /* ======================== */
+  nav {
+    margin-top: 0px;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none !important;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  nav a:hover {
+    color: #000;
+    background-color: #39ff14;
+    text-shadow: none;
+    box-shadow: 0 0 8px #39ff14;
+  }
+
+
+/* Main Colors */
+.neon-pink-bg {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #ff4f81, 0 0 20px #ff4f81, 0 0 30px #ff4f81;
+}
+
+.neon-blue-bg {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #2bc7ff, 0 0 20px #2bc7ff, 0 0 30px #2bc7ff;
+}
+
+/* Link styled like a button */
+a {
+  display: inline-block;
+  margin: 15px auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #2bc7ff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #2bc7ff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  background-color: #18b2e6;
+  transform: scale(1.05);
+}
+
+/* h1's and p's (common) */
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5em;
+  color: #39ff14;
+  text-shadow:
+    0 0 10px #39ff14,
+    0 0 30px #39ff14,
+    0 0 50px #39ff14,
+    0 0 100px #39ff14,
+    0 0 200px #39ff14,
+    0 0 300px #11303d;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sub-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5em;
+  color: #39ff14;
+  text-shadow:
+    0 0 10px #39ff14,
+    0 0 30px #39ff14,
+    0 0 50px #39ff14,
+    0 0 100px #39ff14,
+    0 0 200px #39ff14,
+    0 0 300px #11303d;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: slowFlicker 4s ease-in-out infinite;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #ff4f81, 0 0 20px #ff4f81, 0 0 30px #ff4f81;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  padding: 2rem;
+  background-color: #0d1a26;
+  border-top: 2px solid #39ff14;
+  box-shadow: 0 -5px 15px #39ff14;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  text-shadow: 0 0 5px #39ff14;
+}
+
+.footer-links a:hover {
+  color: #000;
+    background-color: #39ff14;
+    text-shadow: none;
+    box-shadow: 0 0 8px #39ff14;
+}
+
+footer a:hover::before {
+  opacity: 1;
+}
+
+footer a:hover {
+  color: #000;
+  background-color: #39ff14;
+  text-shadow: none;
+}
+
+footer p {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* mobile footer */
+@media (max-width: 900px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 0.25rem 0;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* mobile header */
+/* === When hamburger is active (clicked) === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  z-index: 9999;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #39ff14;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #39ff14;
+}
+
+/* Animated "X" State */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile view - Display the hamburger */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show hamburger icon on mobile */
+  }
+  #nav-links {
+    display: none; /* Hide nav by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust based on your header height */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d1a26;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 90%;
+    z-index: 9999;
+  }
+
+  /* When .show class is added to nav (on hamburger click) */
+  #nav-links.show {
+    display: flex;
+  }
+}
+
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(13, 26, 38, 0.95);
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px; /* or whatever looks good based on your layout */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: none;
+    z-index: 999; /* just in case */
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
+
+/* slow flicker */
+@keyframes slowFlicker {
+  0% {
+    text-shadow:
+      0 0 10px #39ff14;
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.4;
+    text-shadow:
+      0 0 5px #39ff14;
+  }
+  35% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0.3;
+    text-shadow:
+      0 0 40px #11303d;
+  }
+  60% {
+    opacity: 0.7;
+    text-shadow:
+      0 0 80px #39ff14;
+  }
+  75% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #39ff14,
+      0 0 100px #39ff14,
+      0 0 200px #39ff14,
+      0 0 300px #11303d;
+  }
+  90% {
+    opacity: 0.6;
+    text-shadow:
+      0 0 5px #39ff14,
+      0 0 40px #11303d;
+  }
+  100% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #39ff14,
+      0 0 30px #39ff14,
+      0 0 50px #39ff14,
+      0 0 100px #39ff14,
+      0 0 200px #39ff14,
+      0 0 300px #11303d;
+  }
+}
+
+
+
