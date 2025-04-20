@@ -9,17 +9,17 @@
       href="../../media/favicon placeholders/logo-16x16.png"
       type="image/png"
     />
-	  <!-- bring in Bootstrap styles  -->
+    <!-- bring in Bootstrap styles  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-	  <!-- Custom styles -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="../../css/Create.css" />
-    
   </head>
   <body>
-	      <!-- header up top with nav and titles -->
+    <img src="/media/Logo.png" class="logo" />
+    <!-- header up top with nav and titles -->
     <header class="flex-common">
       <div class="flex-display">
         <div class="hamburger" id="hamburger">
@@ -27,7 +27,7 @@
           <span></span>
           <span></span>
         </div>
-	      <!-- page title with neon style -->
+        <!-- page title with neon style -->
         <h1 class="neon-pink-bg">Create Your Own Game!</h1>
         <p style="padding-top: 12px" class="neon-blue-bg">
           Tell Us About Your Game Idea
@@ -39,7 +39,7 @@
           O ya! This is so cool! 🪿🧨
         </p>
 
-               <!-- Site navigation links -->
+        <!-- Site navigation links -->
         <nav class="nav" id="nav-links">
           <a href="./index.html"> Home </a>
           <a href="Create.html">Create your Game</a>
@@ -49,11 +49,11 @@
       </div>
     </header>
     <main>
-	     <!-- Main container holding form and output -->
+      <!-- Main container holding form and output -->
       <div class="container mt-5" id="game-form-container">
-	        <!-- Form for game submission -->
+        <!-- Form for game submission -->
         <form id="game-form">
-		    <!-- Game title input -->
+          <!-- Game title input -->
           <div class="form-group">
             <label for="title">Game Title:</label>
             <input
@@ -64,7 +64,7 @@
               required
             />
           </div>
- 		<!-- Game genre selection -->
+          <!-- Game genre selection -->
           <div class="form-group">
             <label for="genre">Game Genre:</label>
             <select class="form-control" id="genre" name="genre" required>
@@ -74,7 +74,7 @@
               <option value="strategy">Strategy</option>
             </select>
           </div>
-		<!-- Platform selection -->
+          <!-- Platform selection -->
           <div class="form-group">
             <label for="platform">Platform:</label>
             <select class="form-control" id="platform" name="platform" required>
@@ -84,7 +84,7 @@
               <option value="switch">Switch</option>
             </select>
           </div>
-		 <!-- Game features (checkboxes) -->
+          <!-- Game features (checkboxes) -->
           <h3>Select Game Features:</h3>
 
           <label>
@@ -99,7 +99,7 @@
             <input type="checkbox" name="features" value="Bonus" />
             Bonus Modes </label
           ><br />
-		<!-- Difficulty level (radio buttons) -->
+          <!-- Difficulty level (radio buttons) -->
           <h3>Select Difficulty:</h3>
           <label>
             <input type="radio" name="difficulty" value="Easy" />
@@ -113,12 +113,12 @@
             <input type="radio" name="difficulty" value="Hard" />
             Hard
           </label>
-		 <!-- Submit button -->
+          <!-- Submit button -->
           <button type="submit" class="btn btn-primary btn-block">
             Create Game
           </button>
         </form>
-	      <!-- Where the result message gets displayed -->
+        <!-- Where the result message gets displayed -->
         <p id="result" class="mt-3" style="font-weight: bold"></p>
 
         <!--  section for a generated game cover preview -->
@@ -160,7 +160,7 @@
         </table>
       </div>
     </main>
-	   <!-- Footer with links and credits -->
+    <!-- Footer with links and credits -->
     <footer class="footer">
       <div class="footer-links">
         <a href="../HTML/index.html">Home</a>
@@ -168,13 +168,13 @@
         <a href="../HTML/completeDatabase.html">Complete Game List</a>
         <a href="../HTML/About.html">About</a>
       </div>
-	    <!-- Credit and portfolio link -->
+      <!-- Credit and portfolio link -->
       <p>Created by <strong>David Lambalamba</strong></p>
       <p class="Portfolio"><a href="aboutDavid.html">Visit my Portfolio</a></p>
       <p class="copyright">&copy; 2025 DataBrawl. All rights reserved.</p>
     </footer>
-	  
-	  <!-- Script to display a playful fake response instead of a real submission -->
+
+    <!-- Script to display a playful fake response instead of a real submission -->
     <script>
       function showJoke() {
         const result = document.getElementById("result");
@@ -184,10 +184,10 @@
       }
     </script>
 
-  <!-- External scripts for hamburger menu and form behavior -->
+    <!-- External scripts for hamburger menu and form behavior -->
     <script type="module" src="../../scripts/hamburger.js"></script>
     <script src="../../scripts/game_form.js"></script>
-	  
+
     <!-- Bootstrap dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
